@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(./myname.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Hind Siliguri', sans-serif;
+    
+}
+header{
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.704);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header span{
+    color: rgb(159, 56, 255);
+}
+
+.logo{
+    font-size: 15px;
+    cursor: pointer;
+}
+#logout{
+    background-color: rgb(122, 42, 197);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+#logout a{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+#logout h1{
+    font-size: 15px;
+    padding: 10px;
+   
+}
+.user{
+    position: fixed;
+    left: 0;
+    color: aliceblue;
+    top: 0;
+    padding: 20px 25px;
+    background-color: var(--colorP);
+    z-index: 10;
+}
+
+.info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-image: radial-gradient(
+    farthest-corner at 10px 500px,
+    rgb(45, 44, 44) 0%,
+    transparent 70%,
+    transparent 100%
+  );
+}
+.info h1{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+.infoContainer{
+    color: aliceblue;
+    margin-left: 6em;
+    font-size: 17px;
+    font-stretch:expanded;
+}
+.infoContainer strong{
+    color: gray;
+}
+.infoContainer .carac{
+    color: gray;
+    margin-bottom: 1.5em;
+}
+.infoContainer a{
+    color: gray;
+    text-decoration: none;
+}
+.infoContainer a:hover{
+    text-decoration: underline;
+}
+.infoContainer .sinopse{
+    margin-bottom: 2em;
+}
+.carac span{
+    border: 1px solid gray;
+    padding: 2px 3px;
+}
+.infoContainer h3{
+    font-size: 25px;
+    margin-bottom: 1.5em;
+}
+
+
+.eps{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.eps p{
+    position: absolute;
+    padding: 60px;
+}
+.eps span{
+    color: gray;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 100px;  
+}
+.cards a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.card{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(122, 42, 197);
+    border-radius: 5px;
+    margin-top: 2em;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.card:hover{
+    opacity: 0.7;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoramasFree</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ea86b4540c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea86b4540c.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!-- <div class="user">
+        <strong id="username"></strong>
+        <i class="fa-sharp fa-solid fa-user"></i>
+    </div> -->
+    <header>
+        
+        <a href="#start"><h1 class="logo">DORAMAS<span>FREE</span></h1></a>
+
+        <div class="search">
+             <input type="text" id="search" placeholder="Procurar">
+        </div>
+
+        <!-- <div id="logout" onclick="sair()">
+            <a href="../Sing-in/singin.html"><h1>logout</h1><i class="fa-solid fa-right-from-bracket"></i></a>
+         </div> -->
+    </header>
+    <section id="start">
+        <div class="dramabg">
+            
+                    <h1>MY name</h1>
+               
+                    <a href="#romance"><li>Romance</li></a>
+                    <a href=""><li>Drama</li></a>
+                    <a href=""><li>Fantasia</li></a>
+                    <a href=""><li>Artes Marciais</li></a>
+                
+            
+           
+            <button onclick="myname()">Assistir</button>
+        </div>
+        <div class="linha"></div>
+    </section>
+
+    <section class="favoritos">
+        <h1>Favoritos</h1>
+        <div class="slide-container swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/goblinCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/alquimiaCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image" onclick="garota20()">
+                    <img src="../assents/seculoCard.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/veraoCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/okayCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/itawonCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/apostandoCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/pretendendteCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/alquimia2Card.jpg" alt="">
+                </div>
+              </div>
+           
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="linhaFav"></div>
+    </section>
+
+
+    <section id="romance">
+        <h1>Romance</h1>
+        <div class="slide-container swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/pretendendteCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/chocolateCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/direcapCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/firstCards.png "alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/holoCard.jpg "alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/hotelCard.jpeg "alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/kimCard.jpg "alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/privateCard.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="../assents/cards/romanceCard.jpg" alt="">
+                </div>
+              </div>
+           
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </section>
+
+    
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+ 
+</body>
+</html>
